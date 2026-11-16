@@ -29,3 +29,17 @@ class Rental:
             print("Rental Status: CLOSED")
         else:
             print("Rental Status: OPEN")
+
+
+    rental1 = Rental(1000, 2, 1, 4)
+    rental2 = Rental(1001, 3, 2, 6)
+
+    rental1.display()
+    rental2.display()
+
+    # Return the first rental.
+    rental1.isClosed = True
+
+    print("\nAfter returning the first rental:")
+
+    rental1.display()
